@@ -1,0 +1,292 @@
+@font-face {
+    font-family: myFont;
+    src: url('fonts/fonde.otf');
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url('fonts/Distant_Stroke.otf');
+}
+
+@font-face {
+    font-family: myFont3;
+    src: url('fonts/CerottaPersonalUseOnly-0vW5d.otf');
+}
+
+@font-face {
+    font-family: myFont4;
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+font-family: myFont;
+src: url('fonts/The Seasons.otf');
+}
+@font-face {
+font-family: myFonta;
+src: url('fonts/AnticDidone-Regular.ttf');
+}
+@font-face {
+font-family: myFont2;
+src: url('fonts/Brown Sugar .ttf');
+}
+
+@font-face {
+    font-family: myFont;
+    src: url('fonts/fonde.otf');
+}
+
+@font-face {
+    font-family: myFont4;
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+html {
+scroll-behavior: smooth;
+}
+body {
+background-image: url('aesthetic\ pictures/artistic.jpg');
+  background-size: cover;  
+  background-position: center; /* houdt het midden van de afbeelding centraal */
+  background-repeat: no-repeat;
+
+font-family: myFont;
+margin: 0;
+padding: 0;
+color: #ffffff;
+}
+nav {
+background-color: #ffffff;
+width: 100%;
+position: fixed;
+top: 0;
+z-index: 1000;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.topnav {
+display: flex;
+justify-content: flex-end;
+padding: 10px 2.5%;
+box-sizing: border-box;
+border-bottom: 1px solid #d0d0d0;
+}
+.topnav a {
+color: #333;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 18px;
+font-weight: 500;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+.topnav a:hover,
+.topnav a.active {
+background-color: #1b1001;
+color: #fff;
+}
+.intro {
+  max-width: 800px;
+  background-color: #3c3c3c43;
+  height: 150px;
+  padding: 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  opacity: 0.9;
+  margin: 180px auto 60px;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 28px;
+color: #ffffff
+;  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: Georgia;
+  line-height: 1.2;
+}
+
+
+.carousel {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10px;
+  padding: 30px;
+  filter: blur(0);
+  background-color: #3c3c3c43;
+  backdrop-filter: blur(25px);
+  height: auto;
+  overflow: hidden; }
+
+
+.grid {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+
+.back, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(0, 0, 0);
+  border: none;
+  font-size: x-large;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.back { left: 10px; }
+.next { right: 10px; }
+
+
+.card {
+ min-width: 350px; 
+    flex-shrink: 0;
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  color: #000000;
+}
+
+.card p {
+  padding: 0 10px;
+  font-size: 16px;
+  color: #000000;
+}
+
+button {
+  margin: 15px 0 20px;
+  padding: 8px 16px;
+  background-color: #000000cd; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+.card.active {
+  transform: scale(1);
+  filter: blur(0);
+  opacity: 1;
+  z-index: 2; /* staat bovenaan */
+}
+
+.card.side {
+  transform: scale(0.95);   /* iets kleiner */
+  filter: blur(3px);       /* een beetje vaag */
+  opacity: 0.6;            /* doorzichtiger */
+  z-index: 1;
+}
+
+.card.inactive {
+  opacity: 0.3; /* die zie je helemaal niet */
+}
+
+.footer {
+background-color: #000000;
+  font-family: Georgia,serif;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contact-form-section h1 {
+    font-family: myFont2;
+    color: #000000;
+    font-size: 39px;
+    text-align: center;
+    padding: 53px 9px 31px 10px;
+    opacity: 35%;
+}
+.container {
+  display: flex;              
+  justify-content: space-between; 
+  align-items: center;        
+  padding: 20px 40px;
+}
+
+.container > div {
+  flex: 1;                  
+  text-align: center;
+}
+
+.footer h1 {
+  font-family: myFont3;
+  color: #fff;
+  font-size: 45px;
+  margin: 0;
+  text-align: left;
+}
+
+
+.container .footer-col a {
+  font-family: myFont;
+  color: #fff;
+  text-decoration: none;
+ font-size: 20px;
+    margin: 10px;
+  text-align: left;
+}
+
+.footer-col-1 {
+  display: flex;               
+  gap: 40px;                   
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-col-1 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-col-1 a:hover {
+  color: #ddd;              
+}
+
+.footer-col-2 {
+  text-align: right;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer h3 {
+  font-family: myFont2;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-info img{
+width: 90%;
+    height: 20%;
+    align-content: center;
+    border-radius: 2%;
+}

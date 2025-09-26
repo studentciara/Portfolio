@@ -1,0 +1,295 @@
+@font-face {
+  font-family: myFont;
+  src: url('fonts/fonde.otf');
+}
+@font-face {
+  font-family: myFont2;
+  src: url('fonts/Brown Sugar .ttf');
+}
+@font-face {
+  font-family: myFont3;
+  src: url('fonts/CerottaPersonalUseOnly-0vW5d.otf');
+}
+@font-face {
+  font-family: myFont4;
+  src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Georgia;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+nav {
+  background-color: #fff;
+  font-family: myFont;
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid #e0e0e0;
+  top: 0;
+  z-index: 1000;
+}
+
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 2.5%;
+}
+
+.topnav a {
+  color: #333;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.topnav a:hover {
+  background-color: #ECDFCC;
+  color: #fff;
+}
+
+h1, h2 {
+  color: #111;
+  font-weight: 800;
+  font-family: myFont2;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+    font-family: myFont3;
+}
+
+p {
+  max-width: 600px;
+  margin: 10px auto;
+  line-height: 1.6;
+  color: #444;
+}
+
+.intro-section {
+  text-align: center;
+  
+  padding: 100px 20px;
+}
+
+.img-intro {
+  width: 70%;
+  max-width: 500px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 8px;
+  margin: 10px 10%;
+}
+
+.grid > div {
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 2 / 1;
+  border-radius: 6px;
+}
+
+.grid-item1 { background-image: url("https://plus.unsplash.com/premium_photo-1691979207019-e495184e0fa1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGlhbW9uZHNhZXN0aGV0aWN8ZW58MHx8MHx8fDA%3D"); }
+.grid-item2 { background-image: url("https://plus.unsplash.com/premium_photo-1676752176152-49612d2944e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zmxvd2Vyc3NhZXN0aGV0aWN8ZW58MHx8MHx8fDA%3D"); }
+.grid-item3 { background-image: url("https://images.unsplash.com/photo-1745242654649-72e7ffa14d29?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2xhc3MlMjBzYWVzdGhldGljfGVufDB8fDB8fHww"); }
+.grid-item4 { background-image: url("https://images.unsplash.com/photo-1694608485045-31725c48b522?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJsYWNrJTIwYWVzdGhldGljfGVufDB8fDB8fHww"); }
+.grid-item5 { background-image: url("https://images.unsplash.com/photo-1698265061612-0ad3715f5c03?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHNpbHZlciUyMGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D"); }
+.grid-item6 { background-image: url("https://images.unsplash.com/photo-1637661175651-fc1bd96f2d0b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWluaW1hbGlzdCUyMHdoaXRlJTIwYWVzdGhldGljfGVufDB8fDB8fHww"); }
+.grid-item7 { background-image: url("https://images.unsplash.com/photo-1617839400561-d55457a29da2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGdsYXNzJTIwc2Flc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D"); }
+.grid-item8 { background-image: url("https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+.grid-item9 { background-image: url("https://plus.unsplash.com/premium_photo-1677622678379-115b35bf27e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBhZXN0aGV0aWN8ZW58MHx8MHx8fDA%3D"); }
+.grid-item10 { background-image: url("https://images.unsplash.com/photo-1616812756837-ec0a0c85fe5b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGFxdWFyaXVtJTIwc2Flc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D"); }
+.grid-item11 { background-image: url("https://images.unsplash.com/photo-1698265061612-0ad3715f5c03?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHNpbHZlciUyMGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D"); }
+.grid-item12 { background-image: url("https://images.unsplash.com/photo-1637661175651-fc1bd96f2d0b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWluaW1hbGlzdCUyMHdoaXRlJTIwYWVzdGhldGljfGVufDB8fDB8fHww"); }
+.grid-item13 { background-image: url("https://images.unsplash.com/photo-1699978914843-1c1e2d80dacf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YXF1YXJpdW0lMjBzYWVzdGhldGljfGVufDB8fDB8fHww"); }
+.grid-item14 { background-image: url("https://images.unsplash.com/photo-1733681203284-c328320380ff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2xvdyUyMGluJTIwdGhlJTIwZGFyayUyMHNhZXN0aGV0aWN8ZW58MHx8MHx8fDA%3D"); }
+.grid-item15 { background-image: url("https://images.unsplash.com/photo-1637661175651-fc1bd96f2d0b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWluaW1hbGlzdCUyMHdoaXRlJTIwYWVzdGhldGljfGVufDB8fDB8fHww"); }
+.grid-item16 { background-image: url("https://images.unsplash.com/photo-1608257285756-c0d8c70e75b0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHBob3RvZ3JhcGh5JTIwc2Flc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D"); }
+
+
+
+.tasks-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.task-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  width: 220px;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.task-box a {
+  display: block;
+  width: 200px;         
+  height: 200px;        
+  margin: 0 auto 15px;    
+  overflow: hidden;      
+}
+
+.task-box a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+  display: block;
+}
+
+.task-box a .pinterest {
+    width: 250px;
+    height: 100%;
+    bottom: 20px;
+    right: 40px;
+    position: relative;
+    object-fit: cover;
+    display: block;
+}
+
+.task-box a .Spotify {
+width: 170px;
+    height: 260px;
+    bottom: 15px;
+    left: 15px;
+    position: relative;
+    object-fit: cover;
+    display: block;
+}
+
+.task-box a .Splitscreen {
+width: 320px;
+    height: 100%;
+    bottom: 0px;
+    right: 65px;
+    position: relative;
+    object-fit: cover;
+    display: block;
+}
+
+.task-box a .Websites {
+width: 320px;
+    height: 100%;
+    bottom: 0px;
+    right: 65px;
+    position: relative;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+.footer {
+background-color: #000000;
+  font-family: Georgia,serif;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contact-form-section h1 {
+    font-family: myFont2;
+    color: #000000;
+    font-size: 39px;
+    text-align: center;
+    padding: 53px 9px 31px 10px;
+    opacity: 35%;
+}
+.container {
+  display: flex;              
+  justify-content: space-between; 
+  align-items: center;        
+  padding: 20px 40px;
+}
+
+.container > div {
+  flex: 1;                  
+  text-align: center;
+}
+
+.footer h1 {
+  font-family: myFont3;
+  color: #fff;
+  font-size: 45px;
+  margin: 0;
+  text-align: left;
+}
+
+
+.container .footer-col a {
+  font-family: myFont;
+  color: #fff;
+  text-decoration: none;
+ font-size: 20px;
+    margin: 10px;
+  text-align: left;
+}
+
+.footer-col-1 {
+  display: flex;               
+  gap: 40px;                   
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-col-1 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-col-1 a:hover {
+  color: #ddd;              
+}
+
+.footer-col-2 {
+  text-align: right;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer h3 {
+  font-family: myFont2;
+  font-size: 20px;
+  margin-bottom: 10px;
+}

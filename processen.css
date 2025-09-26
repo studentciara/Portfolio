@@ -1,0 +1,254 @@
+@font-face {
+    font-family: myFont;
+    src: url('fonts/fonde.otf');
+}
+
+@font-face {
+font-family: myFont2;
+src: url('fonts/Brown Sugar .ttf');
+}
+
+@font-face {
+    font-family: myFont3;
+    src: url('fonts/CerottaPersonalUseOnly-0vW5d.otf');
+}
+
+@font-face {
+    font-family: myFont4;
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+font-family: myFont5;
+src: url('fonts/Distant_Stroke.otf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #091f00; 
+    font-family: myFont;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #fff; 
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #e0e0e0;
+    top: 0;
+    z-index: 1000;
+}
+
+.topnav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 2.5%;
+    box-sizing: border-box;
+}
+
+.topnav a {
+    color: #333;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.topnav a:hover {
+    background-color: #091f00;
+    color: #fff;
+}
+
+.topnav a.active {
+    background-color: #091f00;
+    color: #fff;
+}
+
+
+button:hover {
+    background-color: #112f05;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+   
+h1 {
+font-family: myFont2;
+font-size: 48px;
+text-align: center;
+margin: 30px 0;
+color: #ffffff;
+}
+.uitleg-box {
+background-color: #e8e8e8;
+padding: 50px;
+margin: 30px auto;
+margin-bottom: 0px;
+width: 80%;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.uitleg-box p{
+font-family: Georgia, serif;
+font-size: 18px;
+line-height: 1.6;
+text-align: center;
+color: #444;
+}
+.floating-line {
+width: 80%;
+margin: 80px auto;
+
+border-top: 2px dashed #ddd;
+}
+.werk-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+padding: 20px;
+gap: 20px;
+}
+.bar {
+width: 280px;
+margin-bottom: 20px;
+text-align: center;
+position: relative;
+}
+.bar img {
+width: 100%;
+max-height: 200px;
+object-fit: cover;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+.bar img:hover {
+transform: translateY(-10px);
+}
+
+h3 {
+font-weight: bold;
+margin-top: 10px;
+font-size: 25px;
+font-family: myFont3;
+color:white ;
+padding: 10px;
+border-radius: 3px;
+display: inline-block;
+position: relative;
+z-index: 1;
+}
+
+
+
+.foto {
+width: 60%;
+max-width: 300px;
+display: block;
+margin: 30px auto;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transform: rotate(3deg);
+}
+.text-block {
+max-width: 800px;
+margin: 30px auto;
+padding: 20px;
+text-align: justify;
+line-height: 1.6;
+background-color: #f0f0f0;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+position: relative;
+}
+.text-block p {
+font-family: Georgia, serif;
+font-weight: 300;
+color: black;
+margin-bottom: 20px;
+}
+
+
+.footer {
+background-color: #000000;
+  font-family: Georgia,serif;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contact-form-section h1 {
+    font-family: myFont2;
+    color: #000000;
+    font-size: 39px;
+    text-align: center;
+    padding: 53px 9px 31px 10px;
+    opacity: 35%;
+}
+.container {
+  display: flex;              
+  justify-content: space-between; 
+  align-items: center;        
+  padding: 20px 40px;
+}
+
+.container > div {
+  flex: 1;                  
+  text-align: center;
+}
+
+.footer h1 {
+  font-family: myFont3;
+  color: #fff;
+  font-size: 45px;
+  margin: 0;
+  text-align: left;
+}
+
+
+.container .footer-col a {
+  font-family: myFont;
+  color: #fff;
+  text-decoration: none;
+ font-size: 20px;
+    margin: 10px;
+  text-align: left;
+}
+
+.footer-col-1 {
+  display: flex;               
+  gap: 40px;                   
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-col-1 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-col-1 a:hover {
+  color: #ddd;              
+}
+
+.footer-col-2 {
+  text-align: right;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer h3 {
+  font-family: myFont2;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
